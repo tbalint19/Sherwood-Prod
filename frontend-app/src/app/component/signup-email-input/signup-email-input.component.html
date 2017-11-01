@@ -1,0 +1,30 @@
+<input
+  class="form-control"
+  [(ngModel)]="user.email"
+  (ngModelChange)="checkEmail()"
+  placeholder="Email"
+  [disabled]="status.isPending()">
+
+<input-info
+  *ngIf="!status.emailIsValid()"
+  [type]="'default'"
+  [text]="'Enter a valid email address'">
+</input-info>
+
+<input-info
+  *ngIf="status.emailIsValid() && status.emailIsChecked()"
+  [type]="'default'"
+  [text]="'Checking...'">
+</input-info>
+
+<input-info
+  *ngIf="status.emailIsValid() && !status.emailIsChecked() && !status.emailIsAvailable()"
+  [type]="'error'"
+  [text]="'Occupied'">
+</input-info>
+
+<input-info
+  *ngIf="status.emailIsValid() && !status.emailIsChecked() && status.emailIsAvailable()"
+  [type]="'success'"
+  [text]="'Available'">
+</input-info>

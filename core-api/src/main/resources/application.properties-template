@@ -1,0 +1,9 @@
+# Server
+server.port = {{port}}
+
+# Database
+spring.datasource.url = jdbc:postgresql://localhost:5432/{{port}}
+spring.datasource.username = {{username}}
+spring.datasource.password = {{password}}
+spring.jpa.hibernate.ddl-auto = {{create / update/ create-drop}}
+spring.jpa.database = {{database}}

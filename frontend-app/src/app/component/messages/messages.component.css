@@ -1,0 +1,49 @@
+.messages-container {
+  position: fixed;
+  z-index: 100;
+  background-color: transparent;
+  top: 65px;
+  right: 0;
+  width: 250px;
+  padding: 10px;
+}
+
+.message {
+  padding: 5px;
+  border-radius: 2px;
+  animation: exist 5s ease-in forwards;
+  box-shadow: 0 0 10px #999;
+}
+
+@keyframes exist {
+  0% {opacity: 0; transform: translateX(50px)}
+  5% {opacity: 0.99; transform: translateX(0px)}
+  80% {opacity: 0.99;}
+  100% {opacity: 0;}
+}
+
+.success {
+  background-color: #5cb85c;
+  color: white;
+}
+
+.error {
+  background-color: #d9534f;
+  color: white;
+}
+
+.default {
+  background-color: #999999;
+  color: white;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text {
+  text-align: center;
+  font-weight: bolder;
+}

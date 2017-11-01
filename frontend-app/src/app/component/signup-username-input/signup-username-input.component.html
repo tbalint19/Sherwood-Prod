@@ -1,0 +1,32 @@
+<input
+  class="form-control"
+  [(ngModel)]="user.username"
+  (ngModelChange)="checkUsername()"
+  placeholder="Username"
+  [disabled]="status.isPending()"/>
+
+<input-info
+  *ngIf="!status.usernameIsValid()"
+  [type]="'default'"
+  [text]="'10-25 characters, only letters and numbers'">
+</input-info>
+
+<input-info
+  *ngIf="status.usernameIsValid() && status.usernameIsChecked()"
+  [type]="'default'"
+  [text]="'Checking...'">
+</input-info>
+
+<input-info
+  *ngIf="status.usernameIsValid() && !status.usernameIsChecked() && !status.usernameIsAvailable()"
+  [type]="'error'"
+  [text]="'Occupied'">
+</input-info>
+
+<input-info
+  *ngIf="status.usernameIsValid() && !status.usernameIsChecked() && status.usernameIsAvailable()"
+  [type]="'success'"
+  [text]="'Available.'">
+</input-info>
+
+

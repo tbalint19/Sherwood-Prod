@@ -1,0 +1,41 @@
+<login-navbar
+  [user]="loginUser"
+  [status]="loginStatus">
+</login-navbar>
+
+<div class="container">
+  <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 block-container tech-stack">
+    <welcome-content></welcome-content>
+  </div>
+
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 block-container">
+    <div class="well {{ signupStatus.isPending() && ' disabled-signup' }}">
+      <h3 id="signup-title">Signup</h3>
+
+      <signup-username-input
+        [user]="signupUser"
+        [status]="signupStatus">
+      </signup-username-input>
+
+      <signup-email-input
+        [user]="signupUser"
+        [status]="signupStatus">
+      </signup-email-input>
+
+      <signup-password-input
+        [user]="signupUser"
+        [status]="signupStatus">
+      </signup-password-input>
+
+      <signup-password-again-input
+        [user]="signupUser"
+        [status]="signupStatus">
+      </signup-password-again-input>
+
+      <signup-button
+        [user]="signupUser"
+        [status]="signupStatus">
+      </signup-button>
+    </div>
+  </div>
+</div>

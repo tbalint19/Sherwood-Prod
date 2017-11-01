@@ -1,0 +1,9 @@
+#signup-title {
+  color: purple;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.disabled-signup {
+  opacity: 0.5;
+}

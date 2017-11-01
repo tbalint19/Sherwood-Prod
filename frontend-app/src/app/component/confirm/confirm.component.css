@@ -1,0 +1,33 @@
+.user-sign {
+  font-size: 3em;
+  text-align: center;
+  opacity: 0.3;
+}
+
+.inline-text-button {
+  border: 0;
+  background-color: transparent;
+  text-decoration: underline;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.row {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.info-container {
+  margin-top: 50px;
+  font-size: 0.7em;
+  color: #555;
+  text-align: center;
+}

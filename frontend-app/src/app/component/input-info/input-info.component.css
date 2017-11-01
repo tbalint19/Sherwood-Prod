@@ -1,0 +1,17 @@
+.input-info {
+  font-size: 0.7em;
+  text-align: right;
+  margin-bottom: 15px;
+}
+
+.default-info {
+  color: #555;
+}
+
+.error-info {
+  color: #d9534f;
+}
+
+.success-info {
+  color: #5cb85c;
+}

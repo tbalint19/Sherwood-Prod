@@ -1,0 +1,8 @@
+# Server
+server.port = {{server-port}}
+
+# Database
+spring.datasource.url = jdbc:postgresql://localhost:5432/{{database-name}}
+spring.datasource.username = {{username}}
+spring.datasource.password = {{password}}
+spring.jpa.database = {{postgresql}}

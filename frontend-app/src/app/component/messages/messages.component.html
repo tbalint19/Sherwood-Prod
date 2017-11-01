@@ -1,0 +1,6 @@
+<div class="messages-container">
+  <div *ngFor="let message of getRelevant()" class="message {{message.severity}}">
+    <p class="title">{{message.title}}</p>
+    <p class="text">{{message.text}}</p>
+  </div>
+</div>

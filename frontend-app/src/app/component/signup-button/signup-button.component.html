@@ -1,0 +1,10 @@
+<div class="signup-button-container">
+  <button
+    class="btn btn-success"
+    (click)="attemptSignup()"
+    (mouseover)="reportAttempt()"
+    [disabled]="status.isDisabled()">
+    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+    Signup
+  </button>
+</div>

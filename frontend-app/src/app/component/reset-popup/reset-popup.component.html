@@ -1,0 +1,38 @@
+<div
+  *ngIf="loginStatus.resetIsActive()"
+  class="reset-modal-background"
+  id="reset-modal-background">
+</div>
+
+<div
+  *ngIf="loginStatus.resetIsActive()"
+  class="reset-modal-container"
+  id="reset-modal">
+  <h3>Forgotten password</h3>
+  <p>
+    Enter your username or email - in case it belongs to an existing account,
+    we will send you an email to the email address that belongs to it.
+  </p>
+  <p>
+    Follow the instructions we sent you with it.
+  </p>
+  <input
+    class="form-control"
+    [(ngModel)]="params.credential"
+    placeholder="Username or email address"/>
+
+  <div class="button-container">
+    <button
+      class="btn btn-default"
+      (click)="closeReset()">
+      Back
+    </button>
+
+    <button
+      class="btn btn-success"
+      (click)="requestReset()">
+      Reset
+    </button>
+  </div>
+
+</div>
